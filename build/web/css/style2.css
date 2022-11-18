@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+body{
+    background-color: #c9d5ff;    
+}
+.header-container{
+    height: 50px;
+    background-color: #151D3B;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
+}
+.header-container ul{
+    display: flex;
+
+}
+.header-container ul li{
+    list-style: none;
+    margin: 0 10px 0 10px;
+}
+.header-container ul li a{
+    padding: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: .5s;
+}
+.header-container ul li a:hover{
+    background-color: #465487;
+    padding: 14px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.container-geral{
+    width: 100vw;
+    height: calc(100vh - 66px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-geral-listar{
+    padding: 40px;
+    width: 100vw;
+    height: calc(100vh - 66px);
+    display: flex;
+    justify-content: center;
+   
+}
+.form-container{
+    display: flex;
+    width: 40%;
+    min-width: 350px;
+    height: 60vh;
+    background-color: #151D3B;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4);
+    
+}
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background: #6EBF8B;
+    border-right: 2px solid #D82148;
+}
+
+.icon-container i{
+    font-size: 450%;
+    color: #151D3B;
+    font-weight: 100;
+}
+.icon-container svg{
+    margin-left: 10%;
+    width: 100px;
+    height: 100px;
+    color: #151D3B;
+    font-weight: 100;
+}
+.icon-container h3{
+    color: #151D3B;
+    margin-top: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: #151D3B;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 15px;
+}
+.form form p{
+    font-size: 13px;
+}
+.form form input[type=text]{
+    width: 100%;
+    
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+.form form input[type=text]:focus{
+    border-bottom: 3px solid white;
+    
+}
+.form form input[type=password]{
+    width: 100%;
+    
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+.form form input[type=password]:focus{
+    border-bottom: 3px solid white;
+    
+}
+.form form input[type=email]{
+    width: 100%;
+    
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+.form form input[type=email]:focus{
+    border-bottom: 3px solid white;
+    
+}
+.whitep {
+    padding: 7px;
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+.form form input{
+    padding: 5px 5px;
+    outline: none;
+    color: white;
+    background-color: #151D3B;
+    border: none;
+}
+.form form input[type=submit]{
+    color: white;
+    border: 1px solid white;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: .5s;
+    
+}
+.form form input[type=submit]:hover{
+    background-color: #D82148;
+    border: 1px solid transparent;
+}
+.botao {
+     width: 100px;
+   color: #151D3B;
+    border: 1px solid white;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: .5s; 
+}
+.botao:hover{
+    background-color: #D82148;
+    border: 1px solid transparent;
+}
+#cadastrar-a {
+    margin-top: 15px;
+    font-size: 8px;
+    color: white;
+}
+table{
+    border: none;
+    width: 100%;
+    
+}
+.corpo-table{
+    width: fit-content;
+    height: 80vh;
+    overflow-y: scroll;
+    width: 80%;
+    background-color: #151D3B;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
+}
+.apagar-icon{
+    cursor: pointer;
+    color: red;
+}
+.editar-icon{
+    color: blue;
+    cursor: pointer;
+}
+thead{
+    background-color: #151D3B;
+    color: white;
+    border-collapse: collapse;
+}
+th{
+    min-width: 50px;
+    border: none;
+    color: white;
+    padding: 5px;
+    
+}
+tr{
+    border-bottom: 1px solid white;
+}
+tr:nth-child(even) {
+    background-color: #192345;
+}
+
+footer{
+    padding: 2px 0;
+    height: 15px;
+    width: 100vw;
+    background-color: #151D3B;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    .form{
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        background-color: #151D3B;
+    }
+    .form-container{
+        
+        border-radius: 15px;
+        
+        
+    }
+    .icon-container{
+       display: none;
+    }
+}
